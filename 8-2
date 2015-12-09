@@ -1,0 +1,18 @@
+from random import randrange
+def test():
+	print("\n\nINTEGER DIVISIONS")
+	a = randrange(10)
+	b = randrange(10)
+	c = input(str(a)+"/"+str(b)+"=")
+	try:
+		if b==0:
+			print ("INCORRECT!") # Divide by Zero Exception		
+		elif (int(a/b)) == int(c):
+			print ("CORRECT!")
+		else:
+			print ("INCORRECT!")
+	except:
+		print ("Please enter Integers Only!")
+
+while(1):
+	test()
